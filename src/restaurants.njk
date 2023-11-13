@@ -5,9 +5,22 @@
 {% block page_description %}The description for this page goes here.{% endblock %}
 
 {% block content %}
-
-<div class="container">
-  <p>Content goes here</p>
-</div>
+<article class="container">
+  <h1>Ships of the Golden Age of pirates</h1>
+  <p>Scuttle tackle wherry spanker port belaying pin jib salmagundi draught Arr.</p>
+  <div class="row">
+  {% for restaurant in restaurants.restaurants %}
+    <div class="col-sm-6 col-lg-4">
+      <div class="card border-secondary text-bg-light mb-4">
+        <div class="card-body">
+          <h5 class="card-title mb-3">{{ restaurant.name }}</h5>
+          <h6 class="card-subtitle mb-2">{{ restaurant.address }}</h6>
+          <p class="card-text">{{ restaurant.category }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</article>
 
 {% endblock %}
