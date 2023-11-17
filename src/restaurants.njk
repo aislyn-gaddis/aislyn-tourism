@@ -6,16 +6,17 @@
 
 {% block content %}
 <article class="container">
-  <h1>Ships of the Golden Age of pirates</h1>
-  <p>Scuttle tackle wherry spanker port belaying pin jib salmagundi draught Arr.</p>
+  <h1>Essential Austin Restaurants</h1>
+  <p>Austin is a city known for its food. When you visit, make sure you visit some of these! </p>
   <div class="row">
   {% for restaurant in restaurants.restaurants %}
     <div class="col-sm-6 col-lg-4">
-      <div class="card border-secondary text-bg-light mb-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="img/restaurants/{{ restaurant.image }}" alt="{{ restaurant.name }}">
         <div class="card-body">
           <h5 class="card-title mb-3">{{ restaurant.name }}</h5>
           <h6 class="card-subtitle mb-2">{{ restaurant.address }}</h6>
-          <p class="card-text">{{ restaurant.category }}</p>
+          <h6 class="card-text">{{ restaurant.category }}</h6>
         </div>
       </div>
     </div>

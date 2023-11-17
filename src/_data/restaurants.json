@@ -73,22 +73,22 @@
       "image": "888.jpg"
     },
     {
-      "name": "",
-      "address": "",
-      "category": "",
-      "image": ""
+      "name": "Red Ash",
+      "address": "Colorado Tower, 303 Colorado St #200, Austin, TX 78701",
+      "category": "Italian",
+      "image": "red-ash.jpg"
     },
     {
-      "name": "",
-      "address": "",
-      "category": "",
-      "image": ""
+      "name": "Bird Bird Biscuit",
+      "address": "2701 Manor Rd, Austin, TX 78722",
+      "category": "Chicken biscuits",
+      "image": "bird-bird-biscuit.jpg"
     },
     {
-      "name": "",
-      "address": "",
-      "category": "",
-      "image": ""
+      "name": "Matt’s El Rancho",
+      "address": "2613 S Lamar Blvd, Austin, TX 78704",
+      "category": "Tex-Mex",
+      "image": "matts-el-rancho.jpg"
     }
   ]
 }

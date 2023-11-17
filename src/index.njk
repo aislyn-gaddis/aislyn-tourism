@@ -2,26 +2,22 @@
 
 {% block page_title %}Home{% endblock %}
 
-{% block page_description %}The index search description for this page goes here.{% endblock %}
+{% block page_description %}Some Austin landmarks.{% endblock %}
 
 {% block content %}
 <div class="container">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Austin Landmarks</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
-  <hr>
+  <h1 class="offset-lg-1">Austin is a great city.</h1>
+  <p class="offset-lg-1">Start by visiting some of its landmarks.</p>
   {% for landmark in austin.landmarks %}
-    <article class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <img src="img/landmarks/{{ landmark.image }}" alt="{{ landmark.name }}" class="img-fluid mb-3">
-        </div>
-        <div class="col-sm-4 my-auto">
-          <h3><a href="landmarks/{{ landmark.slug }}.html">{{ landmark.name }}</a></h3>
-        </div>
-        <hr>
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-7 offset-lg-1">
+        <img src="img/landmarks/{{ landmark.image }}" alt="{{ landmark.name }}" class="img-fluid mb-3">
       </div>
-    </article>
+      <div class="col-sm-12 col-md-4 col-lg-3 my-auto">
+        <h2><a href="landmarks/{{ landmark.slug }}.html">{{ landmark.name }}</a></h2>
+      </div>
+      <hr>
+    </div>
   {% endfor %}
 </div>
 {% endblock %}
