@@ -6,12 +6,14 @@
 
 {% block content %}
 <article class="container">
-  <h1>Essential Austin Restaurants</h1>
-  <p>Austin is a city known for its food. When you visit, make sure you visit some of these! </p>
+  <header class="alert alert-info mb-5 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+    <h1 class="display-4 mb-2">Essential Austin Restaurants</h1>
+    <h5>Austin is a city known for its food. When you visit, make sure you visit some of these! </h5>
+  </header>
   <div class="row">
   {% for restaurant in restaurants.restaurants %}
     <div class="col-sm-6 col-lg-4">
-      <div class="card mb-4">
+      <div class="card border-info mb-4">
         <img class="card-img-top" src="img/restaurants/{{ restaurant.image }}" alt="{{ restaurant.name }}">
         <div class="card-body">
           <h5 class="card-title mb-3">{{ restaurant.name }}</h5>
