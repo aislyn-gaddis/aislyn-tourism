@@ -7,11 +7,11 @@
 {% block page_description %}{{ name }} about page{% endblock %}
 
 {% block content %}
-<article class="bake container">
+<article class="container bake">
   <header class="alert alert-info mb-3 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
     <h1 class="display-4 mb-2">{{ name }}</h1>
   </header>
-  <div class="row">
+  <div class="row mt-1">
     <div class="col-sm-12 col-md-8 col-lg-7 offset-lg-1">
       <img src="../img/landmarks/{{ image }}" alt="{{ name }}" class="img-fluid mb-3">
     </div>
@@ -24,7 +24,7 @@
       </ul>
     </div>
   </div>
-  <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-1"> 
+  <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-1 mt-1"> 
     {{ description | safe }}
   </div>
   <hr>
