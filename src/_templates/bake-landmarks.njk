@@ -4,29 +4,24 @@
 
 {% block page_title %}{{ name }}{% endblock %}
 
-{% block page_description %}{{ name }} about page{% endblock %}
+{% block page_description %}All about {{ name }}{% endblock %}
 
 {% block content %}
 <article class="container bake">
   <header class="alert alert-info mb-3 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
     <h1 class="display-4 mb-2">{{ name }}</h1>
   </header>
-  <div class="row mt-1">
-    <div class="col-sm-12 col-md-8 col-lg-7 offset-lg-1">
-      <img src="../img/landmarks/{{ image }}" alt="{{ name }}" class="img-fluid mb-3">
-    </div>
-    <div class="alert alert-info col-sm-12 col-md-4 col-lg-3">
+  <div class="clearfix mt-4 col-lg-10 offset-lg-1">
+    <img src="../img/landmarks/{{ image }}" alt="{{ name }}" class="col col-lg-6 float-md-end img-fluid mb-3 ms-md-4">
+    <div class="col">
       <ul>
-        <li><h5 class="mb-3">{{ established }}</h5></li>
-        <li><h5 class="mb-3">{{ location }}</h5></li>
-        <li><h5 class="mb-3">{{ activities }}</h5></li>
-        <li><h5 class="bake"><a href="{{url}}" target="blank">Learn More</a></h5></li>
+        <li class="h5 mb-3">{{ established }}</li>
+        <li class="h5 mb-3">{{ location }}</h5></li>
+        <li class="h5 mb-3">{{ activities }}</h5></li>
+        <li class="h5 bake"><a href="{{url}}" target="blank">Learn More</a></li>
       </ul>
+      {{ description | safe }}
     </div>
   </div>
-  <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-1 mt-1"> 
-    {{ description | safe }}
-  </div>
-  <hr>
 </article>
 {% endblock %}

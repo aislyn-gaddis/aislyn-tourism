@@ -10,3 +10,8 @@
     color: lighten($color: #065160, $amount: 40);
   }
 }
+
+ul {
+  list-style-position: outside;
+  margin-left: -12px;
+}

@@ -1,6 +1,10 @@
 .btn-outline-info {
-  --bs-btn-hover-color: white;
-  --bs-btn-hover-bg: #04a2c0;
-  --bs-btn-border-color: #04a2c0;
-  --bs-btn-color: #04a2c0;
+  --bs-btn-hover-color: #065160;
+  --bs-btn-hover-bg: #cff4fc;
+  --bs-btn-border-color: #cff4fc;
+  --bs-btn-color: #cff4fc;
+  --bs-btn-bg: #065160;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-border-color);
 }
