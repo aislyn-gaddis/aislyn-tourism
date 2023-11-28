@@ -1,3 +1,6 @@
 .btn-outline-info {
-  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-color: #065160;
+  --bs-btn-hover-bg: lighten($color: #065160, $amount: 20);
+  --bs-btn-border-color: lighten($color: #065160, $amount: 20);
+  --bs-btn-color: lighten($color: #065160, $amount: 20);
 }
