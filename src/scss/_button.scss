@@ -1,10 +1,11 @@
 .btn-outline-info {
-  --bs-btn-hover-color: #065160;
-  --bs-btn-hover-bg: #cff4fc;
-  --bs-btn-border-color: #9eeaf9;
   --bs-btn-color: #cff4fc;
   --bs-btn-bg: #065160;
+  --bs-btn-hover-color: var(--bs-btn-color);
+  --bs-btn-hover-bg: #{shade-color(#065160, 10%)};
+  --bs-btn-border-color: #065160;
+  --bs-btn-hover-border-color: #{shade-color(#065160, 10%)};
   --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: var(--bs-btn-hover-bg);
-  --bs-btn-active-border-color: var(--bs-btn-border-color);
+  --bs-btn-active-bg: #{shade-color(#065160, 20%)};
+  --bs-btn-active-border-color: #{shade-color(#065160, 20%)};
 }
