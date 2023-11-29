@@ -23,7 +23,7 @@
 @import 'jumbotron';
 @import 'button';
 @import 'cards';
-@import 'bake';
+@import 'landmark';
 
 body {
   background-color: #cff4fc;
@@ -32,4 +32,9 @@ body {
 .display-4,
 h3 {
   color: #065160;
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: -12px;
 }

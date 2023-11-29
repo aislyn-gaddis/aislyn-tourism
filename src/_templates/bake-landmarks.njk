@@ -1,3 +1,5 @@
+{% set page_title = name %}
+
 {% extends '_templates/base.njk' %}
 
 {% set relative_path = "../" %}
@@ -7,7 +9,7 @@
 {% block page_description %}All about {{ name }}{% endblock %}
 
 {% block content %}
-<article class="container bake">
+<article class="container landmark">
   <header class="mb-2 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
     <h1 class="display-4 mt-3 mb-2">{{ name }}</h1>
   </header>
@@ -18,7 +20,7 @@
         <li class="h5 mb-3">{{ established }}</li>
         <li class="h5 mb-3">{{ location }}</li>
         <li class="h5 mb-3">{{ activities }}</li>
-        <li class="h5 bake"><a href="{{url}}" target="blank">Learn More</a></li>
+        <li class="h5 landmark"><a href="{{url}}" target="blank">Learn More</a></li>
       </ul>
       {{ description | safe }}
     </div>

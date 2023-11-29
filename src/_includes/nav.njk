@@ -9,6 +9,11 @@
         <li class="nav-item">
           <a class="nav-link {% if page_title == 'Restaurants' %}active{% endif %}" href="{{ relative_path }}restaurants.html" {% if page_title == 'Restaurants' %}aria-current="page"{% endif %}>Restaurants</a>
         </li>
+        {% for landmark in austin.landmarks %}
+        <li class="nav-item">
+          <a class="nav-link {% if page_title == landmark.name %}active{% endif %}" href="{{ relative_path }}landmarks/{{ landmark.slug }}.html" {% if page_title == landmark.name %}aria-current="page"{% endif %}>{{ landmark.name }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
