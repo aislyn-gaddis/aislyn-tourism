@@ -1,13 +1,13 @@
-<nav id="navbar-custom" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+<nav id="navbar-custom" class="navbar sticky-top navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ relative_path }}index.html">Visit Austin</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-1">
         <li class="nav-item">
-          <a class="nav-link" href="{{ relative_path }}restaurants.html">Restaurants</a>
+          <a class="nav-link {% if page_title == 'Restaurants' %}active{% endif %}" href="{{ relative_path }}restaurants.html" {% if page_title == 'Restaurants' %}aria-current="page"{% endif %}>Restaurants</a>
         </li>
       </ul>
     </div>
